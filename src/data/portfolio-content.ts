@@ -91,7 +91,7 @@ export const portfolioContent = {
       tags: ["C++", "Qt", "SQLite"],
       icon: Database,
       repoUrl: "https://github.com/srey-lis/skincare-management-system.git",
-      demoUrl: "https://your-live-demo.com",
+      demoUrl: "https://skincare-management-system.vercel.app/",
     },
     {
       title: "Mini Banking system",
