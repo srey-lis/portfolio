@@ -10,7 +10,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import portrait from "@/assets/lis-port.png";
-import travelImage from "@/assets/tos-travel.jpg";
+import travelImage from "@/assets/tos.png";
 import skincareImage from "@/assets/skincare-system.jpg";
 import networkImage from "@/assets/network-project.jpg";
 
@@ -97,6 +97,18 @@ export const portfolioContent = {
       title: "Mini Banking system",
       category: "Desktop",
       number: "03",
+      image: networkImage,
+      description:
+        "Network implementations involving VLANs, DHCP, static routing, and network design.",
+      tags: ["VLAN", "DHCP", "Static routing"],
+      icon: Network,
+      repoUrl: "https://github.com/srey-lis/Mini-Banking-C-.git",
+      demoUrl: "https://your-live-demo.com",
+    },
+    {
+      title: "Meow & Woof",
+      category: "Web",
+      number: "04",
       image: networkImage,
       description:
         "Network implementations involving VLANs, DHCP, static routing, and network design.",
