@@ -196,6 +196,7 @@ export const portfolioContent = {
     phoneHref: "tel:089559553",
     email: "norn.sreylis6@gmail.com",
     github: "https://github.com/srey-lis",
+    telegram: "@sreylisnorn",
   },
   technologies: ["HTML", "CSS", "JavaScript", "Laravel", "Flutter", "C++", "MySQL", "SQL Server"],
 };

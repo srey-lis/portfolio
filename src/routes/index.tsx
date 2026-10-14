@@ -47,6 +47,14 @@ const {
   technologies,
 } = portfolioContent;
 
+function telegramProfileUrl(profile: string) {
+  const username = profile
+    .trim()
+    .replace(/^(?:https?:\/\/)?(?:www\.)?(?:t\.me|telegram\.me)\//i, "")
+    .replace(/^@/, "");
+  return `https://t.me/${username}`;
+}
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -879,6 +887,23 @@ function Index() {
                         title="GitHub profile not provided"
                       >
                         <Github className="h-4 w-4 text-primary" /> GitHub —
+                      </span>
+                    )}
+                    {contact.telegram ? (
+                      <a
+                        href={telegramProfileUrl(contact.telegram)}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="panel mono flex items-center gap-2 px-4 py-3 text-xs text-foreground hover:border-primary"
+                      >
+                        <Send className="h-4 w-4 text-primary" /> Telegram
+                      </a>
+                    ) : (
+                      <span
+                        className="panel mono flex items-center gap-2 px-4 py-3 text-xs text-muted-foreground"
+                        title="Telegram profile not provided"
+                      >
+                        <Send className="h-4 w-4 text-primary" /> Telegram —
                       </span>
                     )}
                   </div>
