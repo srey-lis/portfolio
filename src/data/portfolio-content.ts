@@ -136,7 +136,7 @@ export const portfolioContent = {
         "A full-stack travel planning platform built with ASP.NET, allowing users to explore destinations, book hotels, join tour packages, and create personalized travel itineraries.",
       tags: ["ASP.NET", "C#", "SQL Server", "Full Stack"],
       icon: Network,
-      repoUrl: "https://github.com/srey-lis/Mini-Banking-C-.git",
+      repoUrl: "https://github.com/srey-lis",
       demoUrl: "https://your-live-demo.com",
     },
   ] satisfies Project[],
