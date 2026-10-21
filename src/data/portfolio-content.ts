@@ -4,16 +4,21 @@ import {
   Database,
   Globe2,
   Layers3,
+  Lightbulb,
   Network,
+  Server,
   Smartphone,
   Sparkles,
+  Wrench,
   type LucideIcon,
 } from "lucide-react";
 import portrait from "@/assets/lis-port.png";
 import travelImage from "@/assets/tos.png";
 import skincareImage from "@/assets/skincare-system.jpg";
 import networkImage from "@/assets/network-project.jpg";
-
+import minibanking from "@/assets/minibank.png";
+import astra from "@/assets/astra.png";
+import exitstep from "@/assets/exit.png";
 type Project = {
   title: string;
   category: string;
@@ -41,16 +46,21 @@ export const portfolioContent = {
     cvFilename: "Norn-Sreylis-CV1.pdf",
   },
   navigation: ["About", "Skills", "Projects", "Journey", "GitHub", "Contact"],
-  roles: ["Computer Science Student", "Frontend Developer", "UI/UX Designer", "Software Developer"],
+  roles: [
+    "Computer Science Student",
+    "Frontend Developer",
+    "UI/UX Designer",
+    "Full Stack Developer",
+  ],
   hero: {
     description:
       "Computer Science and Engineering student in Phnom Penh, Cambodia, building thoughtful software, web experiences, and mobile applications.",
-    greeting: "HELLO WORLD, I’M",
+    greeting: "HELLO, I’M",
     tagline: "I turn ideas into digital experiences.",
   },
   about: {
     introduction:
-      "I’m Norn Sreylis — a Computer Science and Engineering student passionate about software development, UI/UX design, web technologies, and mobile applications.",
+      "I’m Sreylis Norn a Computer Science and Engineering student passionate about Full Stack Developer, UI/UX design, web technologies, and mobile applications.",
     paragraphs: [
       "I enjoy solving real-world problems through technology, designing useful experiences, and continuously learning new skills.",
       "Based in Phnom Penh, Cambodia, I bring teamwork, communication, adaptability, and problem-solving to every project.",
@@ -65,7 +75,7 @@ export const portfolioContent = {
   },
   stats: [
     { label: "Featured projects", value: 6 },
-    { label: "Skill areas", value: 6 },
+    { label: "Skill areas", value: 9 },
     { label: "GitHub repositories", value: 6 },
     { label: "Certificates", value: 3 },
   ],
@@ -97,22 +107,34 @@ export const portfolioContent = {
       title: "Mini Banking system",
       category: "Desktop",
       number: "03",
-      image: networkImage,
+      image: minibanking,
       description:
-        "Network implementations involving VLANs, DHCP, static routing, and network design.",
-      tags: ["VLAN", "DHCP", "Static routing"],
-      icon: Network,
+        "A desktop banking system built with C# that allows users to manage accounts, deposit and withdraw funds, transfer money, and view transaction history through a simple interface.",
+      tags: ["C#", ".NET", "Banking System"],
+      icon: Globe2,
       repoUrl: "https://github.com/srey-lis/Mini-Banking-C-.git",
       demoUrl: "https://your-live-demo.com",
     },
     {
-      title: "Meow & Woof",
-      category: "Web",
+      title: "Astra-Learn",
+      category: "IOS application",
       number: "04",
-      image: networkImage,
+      image: astra,
       description:
-        "Network implementations involving VLANs, DHCP, static routing, and network design.",
-      tags: ["VLAN", "DHCP", "Static routing"],
+        "Astra-Learn is a mobile learning app that helps students access courses, track progress, and enhance their learning experience through a simple and intuitive interface.",
+      tags: ["iOS", "Education", "Mobile App"],
+      icon: Globe2,
+      repoUrl: "https://github.com/srey-lis/Astra-Learn.git",
+      demoUrl: "https://your-live-demo.com",
+    },
+    {
+      title: "ExitStep",
+      category: "Web",
+      number: "05",
+      image: exitstep,
+      description:
+        "A full-stack travel planning platform built with ASP.NET, allowing users to explore destinations, book hotels, join tour packages, and create personalized travel itineraries.",
+      tags: ["ASP.NET", "C#", "SQL Server", "Full Stack"],
       icon: Network,
       repoUrl: "https://github.com/srey-lis/Mini-Banking-C-.git",
       demoUrl: "https://your-live-demo.com",
@@ -123,13 +145,24 @@ export const portfolioContent = {
       title: "Programming Languages",
       icon: Braces,
       summary: "Building across languages and platforms.",
-      items: ["C++", "C#", "PHP", "JavaScript", "Dart", "SQL"],
+      items: ["C++", "C#", "Java", "Python", "PHP", "JavaScript", "Dart", "SQL", "Kotlin"],
+    },
+    {
+      title: "Core Concepts",
+      icon: Lightbulb,
+      summary: "The fundamentals behind clean, maintainable code.",
+      items: [
+        "Object-Oriented Programming (OOP)",
+        "Data Structures & Algorithms",
+        "MVC Architecture",
+        "REST APIs",
+      ],
     },
     {
       title: "Frontend Development",
       icon: Code2,
       summary: "Interfaces built for people.",
-      items: ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind CSS"],
+      items: ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Tailwind CSS"],
     },
     {
       title: "Frameworks",
@@ -141,19 +174,46 @@ export const portfolioContent = {
       title: "Databases",
       icon: Database,
       summary: "Organizing and working with data.",
-      items: ["MySQL", "SQL Server", "SQLite", "Oracle"],
+      items: ["MySQL", "SQL Server", "SQLite", "Oracle", "Supabase"],
     },
     {
       title: "Mobile Development",
       icon: Smartphone,
       summary: "Experiences on the move.",
-      items: ["Flutter", "iOS Foundation Framework"],
+      items: ["Flutter", "Android Development", "Kotlin", "iOS Development"],
     },
     {
       title: "Design",
       icon: Sparkles,
       summary: "Making ideas useful and intuitive.",
       items: ["UI/UX Design", "Wireframing", "Prototyping"],
+    },
+    {
+      title: "IT & System Administration",
+      icon: Server,
+      summary: "Keeping computers and systems running smoothly.",
+      items: [
+        "Windows Installation & Setup",
+        "Windows Server",
+        "Hardware Troubleshooting",
+        "Software Installation & Configuration",
+        "Networking Basics",
+      ],
+    },
+    {
+      title: "Tools & Technologies",
+      icon: Wrench,
+      summary: "Tools used throughout the development lifecycle.",
+      items: [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Visual Studio",
+        "Postman",
+        "Android Studio",
+        "Supabase",
+        "Firebase",
+      ],
     },
   ],
   strengths:
